@@ -282,7 +282,6 @@ input[type=text]:focus {
   
 .headerFixed {
     background: #00008B;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
