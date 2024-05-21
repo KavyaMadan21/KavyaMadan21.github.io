@@ -256,7 +256,7 @@ input[type=text]:focus {
 }
 
 .leftnavbox {
-    background: #084c61 ;
+    background: #003459 ;
     float: left;
     width: 3%;
     height: 175px;
@@ -264,21 +264,21 @@ input[type=text]:focus {
 }
 
 .leftheaderbox {
-    background: #084c61 ;
+    background: #003459 ;
     float: left;
     width: 27%;
     height: 175px;
 }
 
 .middleheaderbox {
-    background: #084c61 ;
+    background: #003459 ;
     float: left;
     width: 40%;
     height: 175px;
 }
 
 .rightheaderbox {
-    background: #084c61 ;
+    background: #003459 ;
     float: right;
     width: 30%;
     height: 175px;
