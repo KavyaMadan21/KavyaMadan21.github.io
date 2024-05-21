@@ -265,3 +265,14 @@ input[type=text]:focus {
     margin-right: auto;
     width: 30%;
   }
+
+  
+.headerFixed {
+    background: #00008B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
