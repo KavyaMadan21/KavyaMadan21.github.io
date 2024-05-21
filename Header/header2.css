@@ -254,10 +254,18 @@ input[type=text]:focus {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
-  .leftheaderbox {
+.leftnavbox {
     background: #084c61 ;
     float: left;
-    width: 30%;
+    width: 3%;
+    height: 175px;
+    vertical-align: middle;
+}
+
+.leftheaderbox {
+    background: #084c61 ;
+    float: left;
+    width: 27%;
     height: 175px;
 }
 
