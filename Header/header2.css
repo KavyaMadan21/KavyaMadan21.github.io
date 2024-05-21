@@ -2,7 +2,7 @@
     width: 150px;
     height: 150px;
 }
-/*Sign Up*/
+/*Sign Up Modal*/
 * {box-sizing: border-box}
 input[type=email], input[type=password] {
     width: 100%;
@@ -32,17 +32,6 @@ input[type=text]:focus {
   outline: none;
 }
 
-.signup {
-    background-color: #fedc97;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 15px;
-    float: right;
-}
 
 .signup:hover {
     opacity: 1;
@@ -145,7 +134,7 @@ hr {
         width: 100%;
     }
 }
-/*Login*/
+/*Login Modal*/
 input[type=email], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -174,31 +163,6 @@ input[type=text]:focus {
   outline: none;
 }
 
-.login {
-    background-color: #ee6c4d ;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 15px;
-    float: right;
-    margin-right: 0px;
-}
-
-.loginorg {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 15px;
-    float: right;
-    margin-right: 0px;
-}
 
 .login:hover {
     opacity: 1;
@@ -279,12 +243,81 @@ input[type=text]:focus {
     width: 30%;
   }
 
-  
-.headerFixed {
-    background: #3d5a80 ;
+  /*Top Banner / Header*/
+
+  .headerFixed {
+    background: #3d5a80;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+  .leftheaderbox {
+    background: #084c61 ;
+    float: left;
+    width: 30%;
+    height: 175px;
+}
+
+.middleheaderbox {
+    background: #084c61 ;
+    float: left;
+    width: 40%;
+    height: 175px;
+}
+
+.rightheaderbox {
+    background: #084c61 ;
+    float: right;
+    width: 30%;
+    height: 175px;
+}
+
+.title {
+    text-align: center;
+    color:  #fedc97;
+    
+}
+
+.slogan {
+    text-align: center;
+    color:  #fedc97;
+}
+
+.address {
+    text-align: right;
+    color:  #fedc97;
+    font-weight: lighter;
+    font-size:medium;
+    border: "thick solid #084c61"
+}
+
+.login {
+    background-color: #fedc97;
+    color: #084c61;
+    font-weight: bold;
+    padding: 14px 20px;
+    border-style:solid;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
+}
+
+.signup {
+    background-color: #fedc97;
+    color: #084c61;
+    font-weight: bold;
+    padding: 14px 20px;
+    border-style:solid;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
 }
