@@ -1,7 +1,4 @@
-.logo {
-    width: 150px;
-    height: 150px;
-}
+
 /*Sign Up Modal*/
 * {box-sizing: border-box}
 input[type=email], input[type=password] {
@@ -244,6 +241,10 @@ input[type=text]:focus {
   }
 
   /*Top Banner / Header*/
+  .logo {
+    width: 175px;
+    height: 175px;
+    }  
 
   .headerFixed {
     background: #3d5a80;
@@ -303,8 +304,8 @@ input[type=text]:focus {
 }
 
 .login {
-    background-color: #fedc97;
-    color: #084c61;
+    background-color: #04AA6D;
+    color: white;
     font-weight: bold;
     padding: 14px 20px;
     border-style:solid;
@@ -314,11 +315,11 @@ input[type=text]:focus {
     border-radius: 15px;
     float: right;
     margin-right: 8px;
-}
-
-.signup {
-    background-color: #fedc97;
-    color: #084c61;
+  }
+  
+  .signup {
+    background-color: #04AA6D;
+    color: white;
     font-weight: bold;
     padding: 14px 20px;
     border-style:solid;
@@ -328,4 +329,4 @@ input[type=text]:focus {
     border-radius: 15px;
     float: right;
     margin-right: 8px;
-}
+  }
