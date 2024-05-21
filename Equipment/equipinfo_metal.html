@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+    <!--Sidenav-->    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+       <h1 class= "equipinfo"> Equipment Reservation - METAL WORKS</h1>
+       <P class=" defofparagrapha">        
+         <div class="equipmentinfo"><a href="reserve.html"><button class="reserve" style="width: auto;">Reserve Metal Works</button></a></div>
+
+   <!--       InNOVALabs provides all equipment required for following activities: 
+       <ul>
+         <li> Painting </li> 
+         <li> Oil Pastels* </li>
+         <li> Color pencils </li>
+         <li> Realistic Drawing </li>
+         <li> Sewing Machines and Hand Stitching* </li>
+         <li> Origami* </li>
+         </ul>
+    --></p>
+    <p class=" defofparagraph1">
+      <br><br>
+      InNOVAtion Labs metalwork area offers a sanctuary for individuals working on metal projects. It grants access to specialized tools that are typically too costly for personal use, as well as a collaborative setting suitable for both novices and seasoned metalworkers.
+
+      Our array of tools includes:
+      
+      Cutting: Precision cutting tools such as mills, lathes, and bandsaws.
+      
+      Joining: Welders (MIG and TIG) are commonly used for merging pieces together. Oxyacetylene torches offer an alternative for metal cutting and heating.
+      
+      Shaping: Grinders for smoothing and polishing cuts, drill presses for creating holes, and benders for forming curves.
+      
+      Other tools: Additional tools like shears, cold saws, and forges may be available based on reservations.
+      
+      Knowledge Sharing: We mandate safety certifications for specific equipment usage. This often involves free training sessions covered by membership fees that establish a secure and efficient metalworking foundation. Experienced members are usually present to provide assistance or guidance on your project.
+      
+      Projects: The opportunities within a metalwork space are extensive. You can craft anything from sculptures and furniture to car parts and robots.
+      
+      If you have any questions, contact our help desk InNOVAtionneedzhelp@gmail.com or 703-911-1122
+   
+   <p>* participants under 14 years are not eligible paticipate in these activitie(s). Please read full list of
+       <a href="../Equipment/terms.html"> terms and agreements</a> prior to registration<br>
+   </p>
+   <div w3-include-html="../Footer/footer.html"></div> 
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

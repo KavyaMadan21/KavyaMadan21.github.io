@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+    <div w3-include-html="../Header/header2.html"></div>    
+    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+       <h1 class= "equipinfo"> Equipment Reservation - LASER CUTTING</h1>
+        <P class=" defofparagrapha">        
+          <div class="equipmentinfo"><a href="reserve.html"><button class="reserve" style="width: auto;">Reserve Laser Cutters</button></a></div>
+
+       <!--    InNOVALabs provides all equipment required for following activities: 
+        <ul>
+          <li> Painting </li> 
+          <li> Oil Pastels* </li>
+          <li> Color pencils </li>
+          <li> Realistic Drawing </li>
+          <li> Sewing Machines and Hand Stitching* </li>
+          <li> Origami* </li>
+          </ul>
+ -->   
+    
+      
+    <p class=" defofparagraph1"> 
+      Our cutting-edge laser cutter is the ideal tool for those with precise and innovative projects. The latest laser cutter from LaserProInc is now on the market. Here's what you can anticipate from a laser cutting setup in a makerspace:
+
+      Capabilities:
+      
+      Cutting: Laser cutters can accurately cut through various materials such as wood, acrylic, cardboard, fabric (depending on type), and some plastics. The thickness of materials that can be cut will vary based on the laser cutter's wattage.
+      
+      Engraving: The laser can also engrave designs or text onto material surfaces, creating a lasting mark.
+      
+      Process and Projects:
+      
+      Design Before Cutting: Makerspaces typically require you to design your project using software that generates a specific file format (often DXF or SVG) compatible with the laser cutter.
+      
+      Safety First: Laser cutters are powerful tools, and they are extremely hot, so wearing safety glasses is essential to shield your eyes from the laser beam. Our Makerspace requires additional safety training before using equipment.
+      
+      Unleash Your Creativity: With laser cutting, you can bring a wide range of ideas to life. People use them to create personalized gifts, custom jewelry, model parts, prototype inventions, and much more.
+      
+      If you have any questions, contact our help desk InNOVAtionneedzhelp@gmail.com or 703-911-1122
+        </p>
+    <p> Participants under 12 years are not eligible paticipate in these activitie(s). Please read full list of
+  <a href="../Equipment/terms.html"> terms and agreements</a> prior to registration<br>
+<div w3-include-html="../Footer/footer.html"></div> 
+
+</p>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

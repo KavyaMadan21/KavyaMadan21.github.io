@@ -1,0 +1,132 @@
+body {
+    background-image: url("../background.jpg");
+    font-family: "Courgette";
+}
+
+.title {
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.footer {
+    margin-top: 50vh;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0097FF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0061FF;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  #mySearch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+  }
+  
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    display: block
+  }
+  
+  .aboutdiv {
+    padding: 0;
+  }
+  
+  .abouthead {
+    text-align: center;
+  }
+  
+  .about {
+    text-align: left;
+  }
+
+  .aboutimg {
+    float: left;
+    margin: 5px;
+  }
+
+  .abouttext {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .ayanimg {
+    float: left;
+    margin: 5px;
+  }
+
+  .aboutayan {
+    text-align: left;
+  }
+
+  .abouttextayan {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .kavyaimg {
+    float: left;
+    margin: 5px;
+  }
+
+  .aboutkavya {
+    text-align: left;
+  }
+
+  .abouttextkavya {
+    font-size: 20px;
+    text-align: left;
+  }

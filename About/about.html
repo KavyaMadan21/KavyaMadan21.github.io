@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Developers</title>
+    <link rel="stylesheet" href="about.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>   
+    <script src="about.js"></script>
+</head>
+<body>
+<div w3-include-html="../Header/header2.html"></div>
+
+  <br>
+  <br>
+    <div id="mySidenav" class="sidenav">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="../Equipment/equipment.html">Equipment</a></li>
+        <li><a href="../Membership/membership.html">Membership</a></li>
+        <li><a href="../Reservation/reservation.html">Reservation</a></li>
+        <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+        <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+    </ul>
+    </div>
+
+    <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+<script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+          <div class="aboutdiv">
+        <h2 class="about">About Us</h2>
+        <h2 class="aboutayan">Ayan Prasad</h2>
+        <img src="ayanimg.jpg" alt="Ayan" class="ayanimg">
+        <div class="abouttextayan">
+        <p><b>Hello! I am a boy who is 14 years old. 
+          I am an 8th grader who goes<br> to Rocky Run Middle School in Fairfax, VA.
+        <br>I love programming with many coding languages. 
+        <br>I know HTML, CSS, Javascript, Python, and Scratch
+      <br>Additionally, I am an enthusiast for video games. 
+      <br>I play many games such as Super Mario Odyssey and 
+      <br>Legend of Zelda: Breath of the Wild. I also watch all kinds of anime 
+      <br>such as Naruto and One Piece. Furthermore, I play keyboard. 
+      <br>I memorized many songs and can play them with ease. 
+      <br>Also, I love to play with legos. I can go for hours building Legos.
+      <br>In school, I am part of the TSA afterschool club in my school.
+      <br>This is my second year in TSA. Last year I went all the way to nationals and <br>even got in the top three in the Mechanical Engineering event!</b></p>
+        </div>
+      </div>
+    <br>
+   
+<div class="aboutdiv">
+  <h2 class="about">Ananth Namilae</h2>
+  <img src="AnanthImG.PNG" alt="Ananth" class="aboutimg">
+  <div class="abouttext">
+<p><b>Hello! I am Ananth, a 13 year old who attend Rocky Run Middle School. 
+    I am an 8th grader <br> who enjoys multiple hobbies.
+      <br>I love programming and playing/making video games. 
+      <br>I also enjoy coding in HTML, CSS, Javascript, Python, and Scratch
+      <br>In my sparetime, I enjoy 3D printing, playing chess and reading books. I made numerous prints.
+      <br> the Percy Jackson Saga, Harry Potter,and 
+    <br>And Then There were None. I also watch anime 
+    <br>such as Naruto and Dragonball Z. 
+    <br>I am part of the TSA afterschool club in my school.
+    <br>This is my second year in TSA. Last year I went all the way to Nationals and <br>even got in the top three in Mechanical Engineering event along with Ayan!</b></p>
+      </div>
+</div>
+      
+<div class="aboutdiv">
+        <h2 class="aboutkavya">Kavya Madan</h2>
+        <img src="kavya.jpeg" alt="Kavya" class="kavyaimg">
+        <div class="abouttextkavya">
+        <p><b>My name is Kavya Madan and I am 14 years old at Rocky Run middle school. 
+<br>I enjoy playing the piano and I have played since I was 8 years old.
+<br>I also like to play soccer because I like playing the sport with my team.
+<br>I love to read and my favorite book series are Keeper of the Lost Cities, Unwanteds and Harry Potter 
+<br>This is my first year at TSA and I plan to continue with it during high school.
+<br>At states I got first place in leadership strategies and children stories.
+</b></p>
+        </div>
+      </div>
+
+<br>
+<div w3-include-html="../Footer/footer.html"></div> 
+<script>
+  includeHTML();
+</script>
+</body>
+</html>

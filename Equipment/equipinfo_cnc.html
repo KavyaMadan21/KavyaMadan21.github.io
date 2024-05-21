@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+    <!--Sidenav-->    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+<h1 class= "equipinfo"> Equipment Reservation - Computer Numerical Control(CNC) Machine</h1>
+<P class=" defofparagrapha">        
+  <div class="equipmentinfo"><a href="reserve.html"><button class="reserve" style="width: auto;">Reserve CNC Machines</button></a></div>
+  <p class=" defofparagraph1"> A CNC machine, also known as Computer Numerical Control, is a powerful tool used for creating intricate and precise designs. It operates by translating digital instructions into physical objects through precise control of cutting tools. In a makerspace CNC setup, you can expect to find the following:
+
+    Capabilities:
+    
+    1. Material Versatility: CNC machines work with a variety of materials like wood, plastic, acrylic, aluminum, and foams, depending on the machine's type and power.
+    
+     2. Milling and Routing: CNC machines remove material and create precise shapes with their rotating cutting tools.
+    
+    3. Beyond Cutting: Advanced CNC machines may offer additional functionalities such as drilling, engraving, or even 3D carving.
+    
+    Process:
+    
+    1. Design is Key: CAD software is needed to create a digital blueprint that the CNC machine can understand.
+    
+    2. Safety First: CNC machines, due to their power, require strict understanding to safety protocols. We have specific training or certification requirements before users can operate the machines independently.
+    
+    Project
+    
+    1. Project Possibilities: The possibilities with a CNC machine are vast. You can create custom signs, furniture parts, complex prototypes, and electronic enclosures, among other things.
+    
+    Benefits of a Makerspace CNC:
+    
+    1. Advanced Manufacturing Access: Owning a personal CNC machine can be costly. We provide affordable access to this advanced technology for a membership fee.
+    
+    2. Software and Training: Introductory training on design software and CNC operation can help beginners get started.
+    
+    3. Expert Help and Collaboration: The makerspace community can be a valuable resource. Experienced members can offer guidance on design, material selection, and troubleshooting any challenges you may encounter.
+    
+    If you have any questions, contact our help desk InNOVAtionneedzhelp@gmail.com or 703-911-1122
+  </p>
+
+<!--   InNOVALabs provides all equipment required for following activities: 
+<ul>
+  <li> Painting </li> 
+  <li> Oil Pastels* </li>
+  <li> Color pencils </li>
+  <li> Realistic Drawing </li>
+  <li> Sewing Machines and Hand Stitching* </li>
+  <li> Origami* </li>
+  </ul>
+</p>
+ -->
+<p>* participants under 14 years are not eligible paticipate in these activitie(s). Please read full list of
+<a href="../Equipment/terms.html"> terms and agreements</a> prior to registration<br>
+</p>
+<div w3-include-html="../Footer/footer.html"></div> 
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

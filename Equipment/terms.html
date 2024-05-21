@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+    <!--Sidenav-->    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    <h1 class= "equipinfo"> InNOVAtion Labs End User Agreement and Safe Use policy </h1>
+    <p class=" defofparagraph1"> 
+    <p>InNOVAtion Labs reserves the final right to deny access to equipment.</p>
+    <p>Users will be required to sign waiver forms that will excuses inNOVAtion Labs from any liability for injuries while using equipment.</p>
+    <p>By subscribing or reserving equipment at InNOVAtion Labs, it is assumed that users agree to a Safe Use policy that covers all equipments.</p>
+    <div w3-include-html="../Footer/footer.html"></div> 
+    <script>
+        includeHTML();
+    </script>
+    </body>
+</html>

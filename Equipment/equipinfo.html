@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+ <div w3-include-html="../Header/header2.html"></div>
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+      <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+    <h1 class= "equipinfo"> COMING SOON !!! </h1>
+     <p class=" defofparagraph1"> 
+      InNOVAtion Labs continiously improves and updates its its offerings. Check out regular these updates and news from our team:
+           
+      We have great news for our the metalworking enthusiasts. In 2025, we'll be adding a Plasma cutters that offers fast, rough cuts on sheet metal. 
+      Calling all woodworkers! Get ready to have a upgraded scroll saw with our brand new bandsaw.
+      Unleash your inner artist with our new caligraphy pens. Our 3D printing area is about to be supercharged with the arrival of a new Resin Printer.
+      Stay tuned! We'll be revealing more details about the new equipment and its arrival date soon. In the meantime, follow our Facebook (@InnovationLabs) for more updates.  
+   
+    </p>
+       <div w3-include-html="../Footer/footer.html"></div> 
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

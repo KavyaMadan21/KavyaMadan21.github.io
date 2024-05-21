@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+    <!--Sidenav-->    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    
+
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+      <h1 class= "equipinfo"> Equipment Reservation - WOOD WORKS</h1>
+      <P class=" defofparagrapha">        
+        <div class="equipmentinfo"><a href="reserve.html"><button class="reserve" style="width: auto;">Reserve Wood Works</button></a></div>
+
+ <!--        InNOVALabs provides all equipment required for following activities: 
+      <ul>
+        <li> Painting </li> 
+        <li> Oil Pastels* </li>
+        <li> Color pencils </li>
+        <li> Realistic Drawing </li>
+        <li> Sewing Machines and Hand Stitching* </li>
+        <li> Origami* </li>
+        </ul>
+  --> </p>
+  
+  <p class=" defofparagraph1"> 
+  
+    Equipment:
+  </p>
+  <p class=" defofparagraph1"> 
+    
+    InNOVAtion Labs Woodwork area offers a sanctuary for individuals working on wood products. It grants access to specialized tools that are typically too costly for personal use, as well as a collaborative setting suitable for both novices and seasoned Woodworkers.
+
+    In the process of breaking down lumber, band saws are used for ripping lumber to size, while planers are utilized to achieve consistent thicknesses. 
+    
+    Jointers are essential for ensuring perfectly flat edges for gluing, while thickness planers are used to create boards of uniform thickness. 
+    
+    Sanding tools with various grits are used to smooth out surfaces, while drill presses are employed to make holes for joinery and hardware. 
+    
+    Lathes allow for creating curved pieces and spindles. Power cutting tools such as miter saws are used for precise cuts at angles, circular saws for general cutting needs, and jigsaws for intricate cuts. 
+    
+    Depending on the makerspace, specialty tools like woodturning lathes, CNC machines, or vacuum clamps may be available for holding glued pieces together. 
+    
+    In a makerspace woodshop, safety is a top priority. 
+    
+    We require safety certifications for specific tools, often involving Free training classes on proper technique and hazard awareness. 
+    
+    Experienced woodworkers are typically present to offer guidance, suggest solutions, and inspire with their projects. The collaborative environment in a makerspace woodshop allows for sharing of skills and techniques, as well as sparking new ideas for projects.  
+      
+  </p>
+<p> participants under 14 years are not eligible paticipate in these activitie(s). Please read full list of
+      <a href="../Equipment/terms.html"> terms and agreements</a> prior to registration<br>
+  </p>
+<div w3-include-html="../Footer/footer.html"></div> 
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

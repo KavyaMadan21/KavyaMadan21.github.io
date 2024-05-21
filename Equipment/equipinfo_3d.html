@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Information</title>  
+    <link rel="stylesheet" href="equipinfo.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="equipinfo.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>    
+   <!--Sidenav-->    
+    <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+      <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+<script>
+    includeHTML();
+</script>
+<h1 class= "equipinfo"> Equipment Reservation - 3D PRINTING</h1>
+        <P class="defofparagrapha">    
+          At InNOVAtion Labs, we have or very own 3D printing Equipment. We utilize 3D printing for a variety of purposes including prototyping, model-making, and creating personalized items.
+
+          With a strong emphasis on safety, We implement protocols to minimize risks associated with high temperatures, moving parts, and hazardous materials.
+          
+          Members of InNOVAtion Labs undergo comprehensive training sessions to gain knowledge about equipment operation, handling materials safely, and understanding emergency procedures.
+          
+          InNOVAtion Labs has a collaborative environment where members can exchange ideas, troubleshoot challenges, and improve their techniques together.
+          
+          By pooling together the collective knowledge of enthusiasts at all skill levels, we enhance the overall understanding of 3D printing with everyone involved.
+          
+          - Cost efficiency: Utilizing 3D printing in InNOVAtion Labs, and other makerspaces presents a more cost-effective option compared to traditional manufacturing techniques, resulting in reduced production expenses by eliminating the requirement for costly molds or tooling.
+          
+          - Accessibility: We offer the opportunity to access 3D printers at a fraction of the cost of owning one individually, enabling individuals to benefit from advanced technology without a substantial financial commitment.
+          
+          - Reduction in material wastage: 3D printing allows for the precise utilization of materials by using only what is necessary for each print, thereby minimizing waste and cutting down on material costs.
+          
+          - Do-it-yourself solutions: Makers have the ability to fabricate their own components, tools, and prototypes through 3D printing, eliminating the necessity to buy expensive pre-made parts or products.
+          
+          - Economies of scale: We take advantage of shared resources and bulk purchasing capabilities to procure materials and equipment at discounted prices, ultimately lowering expenses for individual users.
+          
+          
+          <div class="equipmentinfo"><a href="reserve.html"><button class="reserve" style="width: auto;">Reserve a 3D Printer</button></a></div>
+
+     <!--      InNOVALabs provides all equipment required for following activities: 
+        <ul>
+          <li> Painting </li> 
+          <li> Oil Pastels* </li>
+          <li> Color pencils </li>
+          <li> Realistic Drawing </li>
+          <li> Sewing Machines and Hand Stitching* </li>
+          <li> Origami* </li>
+          </ul>
+ -->    </p>
+    
+    <p> participants under 8 years are not eligible paticipate in these activitie(s). Please read full list of
+        <a href="../Equipment/terms.html"> terms and agreements</a> prior to registration<br>
+    </p>
+
+<div w3-include-html="../Footer/footer.html"></div> 
+<script>
+    includeHTML();
+</script></body>
+</html>

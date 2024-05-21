@@ -1,0 +1,378 @@
+body {
+    background-image: url("../background.jpg");
+    font-family: "Courgette";
+}
+
+.title {
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.footer {
+    margin-top: 0vh;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+  
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0097FF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0061FF;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  #mySearch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+  }
+  
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    display: block
+  }
+
+  .reservinghead {
+    text-align: center;
+  }
+
+  .reservingtext {
+    text-align: center;
+  }
+
+  .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Art*/
+   #artBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-130%, 1200%);
+    border-radius: 25px;
+    background-color: red;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .art {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .artcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closeart {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeart:hover,
+  .closeart:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*Wood*/
+  #woodBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(40%, 900%);
+    border-radius: 25px;
+    background-color: yellow;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .wood {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .woodcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closewood {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closewood:hover,
+  .closewood:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*CNC*/
+  #cncBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(40%, 1400%);
+    border-radius: 25px;
+    background-color: orange;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .cnc {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .cnccontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closecnc {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closecnc:hover,
+  .closecnc:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*3D Printing*/
+  #printBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(70%, 300%);
+    border-radius: 25px;
+    background-color: cyan;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .print {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .printcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closeprint {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeprint:hover,
+  .closeprint:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*Metal*/
+  #metalBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-150%, 800%);
+    border-radius: 25px;
+    background-color: green;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .metal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .metalcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closemetal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closemetal:hover,
+  .closemetal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*Lazer*/
+  #lazerBtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-150%, 300%);
+    border-radius: 25px;
+    background-color: #9E00FF;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .lazer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .lazercontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .closelazer {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closelazer:hover,
+  .closelazer:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

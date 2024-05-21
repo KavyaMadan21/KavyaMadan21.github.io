@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserving Rooms</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>   
+    <script src="reservation.js"></script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+
+    <br>
+    <br>
+      <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+      <h2 class="reservinghead">Reserving Rooms</h2>
+      <p class="reservingtext">Click on a button on a room in the map below to reserve a room</p>
+      <img src="InNOVAtion Labs Map.png" alt="InNOVAtion Labs Map" class="map">
+    <div class="reservations">
+      <!--Art-->
+        <a href="art.html" target="_blank"><button id="artBtn">Arts and Crafts</button></a>
+      <!--Wood-->
+      <a href="wood.html" target="_blank"><button id="woodBtn">Woodworking</button></a>   
+      <!--CNC-->
+      <a href="cnc.html" target="_blank"><button id="cncBtn">CNC Machines</button></a>
+      <!--3D-->
+      <a href="print.html" target="_blank"><button id="printBtn">3D Printing</button></a>
+      <!--Metal-->
+      <a href="metal.html" target="_blank"><button id="metalBtn">Metal Works</button></a>
+      <!--Lazer-->
+      <a href="lazer.html" target="_blank"><button id="lazerBtn">Lazer Cutting</button></a>
+    </div>
+    <div w3-include-html="../Footer/footer.html"></div> 
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

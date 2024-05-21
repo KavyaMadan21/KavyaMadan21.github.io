@@ -1,0 +1,292 @@
+.title {
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+/*Sign Up*/
+* {box-sizing: border-box}
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.signup {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+}
+
+.signup:hover {
+    opacity: 1;
+}
+
+.signupbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+}
+
+.signupbtn:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+}
+
+.cancelbtn:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn .signupbtn {
+        width: 100%;
+    }
+}
+/*Login*/
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.login {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+    margin-right: 0px;
+}
+
+.login:hover {
+    opacity: 1;
+}
+
+.loginbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 15px;
+    float: right;
+}
+
+.loginbtn:hover {
+    opacity: 1;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  .avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+    .headerimg {
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.3), 0 5px 21px 0 rgba(0,0,0,0.18);
+  }
+
+  .headerimg1 {
+    margin-left: 10%;
+  }
+
+  .headerimg2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headerimg3 {
+    margin-right: 4%;
+  }

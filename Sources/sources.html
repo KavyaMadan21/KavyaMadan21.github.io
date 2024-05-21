@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources</title>
+    <link rel="stylesheet" href="sources.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src="sources.js"></script>
+</head>
+<body>
+      <div w3-include-html="../Header/header2.html"></div>
+    <br>
+    <br>
+      <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+    <ul class="sources">
+        <nobr>
+        <li><p>Blue Paint Background - By Annie Spratt on Unsplash</p></li>
+        <li><p>InNOVAtion Labs Logo - Made in Canva by Ananth Namilae</p></li>
+        <li><p>Avatar Icon - <a href="https://commons.wikimedia.org/wiki/File:User_Avatar.png">my_thesis_account</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p></li>
+        <li><p>Home Page Painting Image - By Rahul Jain on Unsplash</p></li>
+        <li><p>Star Rating Icons - By <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</a></p></li>
+        <li><p>Cart Icon - By <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</a></p></li>
+        <li><p>Calendar Image - Made By Ayan Prasad on Canva</p></li>
+        <li><p>Header Homepage Circle Image Left - By Yan Krukau on Pexels.com</p></li>
+        <li><p>Header Homepage Circle Image Center - By Vanessa Loring on Pexels.com</p></li>
+        <li><p>Header Homepage Circle Image Right - By Jakub Zerdzicki on Pexels.com</p></li>
+        <li><p>Innovation Word Cloud - By Kheng Guan Toh on Adobe Stock</p></li>
+        <li><p>Courgette Font - By <a href="https://fonts.googleapis.com/css?family=Courgette">https://fonts.googleapis.com/css?family=Courgette</a></p></li>
+        <li><p>Kid and Woman Working Image - By Vanessa Loring on Pexels.com</p></li>
+        <li><p>Paintbrushes Image on Equipment Page Top - By Pierre Bamin on Unsplash</p></li>
+        <li><p>Origami Image on Equipment Page Top - By Carolina Garcia Tavizon</p></li>
+        <li><p>School Kid With Creation Video - By Олександр Копєйкін  on Pixabay</p></li>
+        <li><p>Kids with Clay Video - By Nino Souza Nino from Pixabay</p></li>
+        <li><p>Kids Coloring Video - By Олександр Копєйкін from Pixabay</p></li>
+        <li><p>InNOVAtion Labs Map - Made in Canva by Ayan Prasad</p></li>
+        <li><p>Ayan Prasad Image - Shot on phone by Ayan Prasad</p></li>
+        <li><p>Tools Image on Equipment Page Top - By Austin Ramsey on Unsplash</p></li>
+        <li><p>CNC Machine on Equipment Page Top - By Opt Lasers on Unsplash</p></li>
+        <li><p>Join Today Image Home Page Top - By Zulfian on PNGTree</p></li>
+        <li><p>3D Printing Image on Classes and Events Page - By NEW DATE SERVICES on Unsplash</p></li>
+        <li><p>Metal Welding Image on Classes and Events Pag - By Sidney Pearce on Unsplash</p></li>
+        <li><p>Arts and Crafts Image on Classes and Events Page - By Taylor Heery on Unsplash</p></li>
+        <li><p>Wood Sculpting Image on Classes and Events Page - By Michaela Murphy on Unsplash</p></li>
+        <li><p>Laser Cutting Machine Image on Classes and Events Page - By Colin Mitchell on Unsplash</p></li>
+        <li><p>Web Design Image on Classes and Events Page - By AltumCode on Unsplash</p></li>
+        <li><p>CNC Machine Image on Classes and Events Page - By More Amore on Pexels.com</p></li>
+        <li><p>Arrow Icons on Calendar on Events from Calendar of Events and Hours Page - By <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css</a></p></li>
+        </nobr>
+    </ul>
+    <div w3-include-html="../Footer/footer.html"></div> 
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

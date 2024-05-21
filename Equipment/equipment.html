@@ -1,0 +1,233 @@
+<!-- START NEW-->
+<!-- END NEW-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment and Services</title>
+    <link rel="stylesheet" href="equipment.css">
+    <script src="equipment.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- START NEW HEAD-->
+<style>
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+    .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  /*   
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+   */
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+  <!-- END NEW HEAD-->
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+  <div w3-include-html="../Header/header2.html"></div>
+  <h1 class= "equipmentheader">Reserve Equipment</h1>
+     
+    <!--Sidenav-->    
+     <br>
+    <br>
+      <div id="mySidenav" class="sidenav">
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+      <ul id="myMenu">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="../Equipment/equipment.html">Equipment</a></li>
+          <li><a href="../Membership/membership.html">Membership</a></li>
+          <li><a href="../Reservation/reservation.html">Reservation</a></li>
+          <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+          <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+      </ul>
+      </div>
+
+      <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+  <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script><!-- START NEW BODY-->
+<!-- START RESPONSIVE IMAGES-->  
+<style>
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 30%;
+    padding: 0 10px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: top;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  </style>
+<!-- END RESPONSIVE IMAGES-->  
+<div class="row">
+    <div class="responsive column">
+        <div class="gallery">
+              <a  href="equipinfo_cnc.html">
+                <img src="cnc.jpg" alt="EQUIPMENT - WOOD WORKS" width="600" height="400">
+              </a>
+              <div class="desc">
+                Learning to use CNC machine, a pro user, a hobbyist or a business user? Read more and reserve<a  href="equipinfo_cnc.html" alt="Click here to read more and reserve">here</a>
+              </div>
+         </div>
+    
+        <div class="gallery">
+              <a  href="equipinfo_wood.html">
+                <img src="wood.jpg" alt="EQUIPMENT - WOOD WORKS" width="600" height="400">
+              </a>
+              <div class="desc">We offer Table saw, lathe machines, saw tops under one roof. Read more and reserve <a  href="equipinfo_wood.html" alt="Click here to read more and reserve">here</a>
+              </div>
+        </div>
+      </div>
+    
+  <div class="responsive column">
+  
+        <div class="gallery">
+              <a  href="equipinfo_3d.html">
+                <img src="3dprint.jpg" alt="EQUIPMENT - 3D PRINTING" width="600" height="400">
+              </a>
+              <div class="desc">Bring your ideas to life in our state of the art 3D Print Lab. Read more and reserve <a href="equipinfo_3d.html">here</a>
+              </div>
+        </div>
+        <div class="gallery">
+              <a  href="equipinfo_metal.html">
+                <img src="metal.jpg" alt="EQUIPMENT - METAL WORKS" width="600" height="400">
+              </a>
+              <div class="desc">Create masterpieces with our top quality tools such as our welding machine. Read more and reserve <a href="equipinfo_metal">here</a>
+              </div>
+        </div>
+  </div>
+    
+<div class="responsive column">
+        <div class="gallery">
+              <a  href="equipinfo_laser.html">
+                <img src="laser.jpg" alt="EQUIPMENT - LASER CUTTING" width="600" height="400">
+              </a>
+              <div class="desc">
+               We offer Table saw, saw top, lathe machines under one roof. Read more and reserve <a href="equipinfo_laser.html">here</a>
+              </div>
+        </div>
+
+        <div class="gallery">
+              <a  href="equipinfo_arts.html">
+                 <img src="art_craft.jpg" alt="EQUIPMENT - ARTS" width="600" height="400">
+              </a>
+               <div class="desc">Give your imagination shape with hundreds of art tools <a href="equipinfo_arts.html">here</a>
+               </div>
+        </div>
+  </div>
+<!-- </div>
+ -->
+</div>
+<p class="equipmentintro"><br><br>Not sure how to use the equipment? No problem. We offer many one of our many <a href="../Classes and Events/classes.html">classes</a> that meets your neeeds.<br>
+   Apply for our popular <a href="../Membership/membership.html">membership</a> program to join a supportive community for learning and collaboration. <br>We regularly add new equipment and update our services. Please checkout our upcoming changes <a href="equipinfo.html">here</a>.</p>
+<!-- END NEW BODY-->
+<div w3-include-html="../Footer/footer.html"></div> 
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

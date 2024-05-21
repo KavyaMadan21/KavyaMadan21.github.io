@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Events</title>
+    <link rel="stylesheet" href="classes.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>   
+    <script src="classes.js"></script>
+</head>
+<body>
+<div w3-include-html="../Header/header2.html"></div>
+
+  <br>
+  <br>
+    <div id="mySidenav" class="sidenav">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="../Equipment/equipment.html">Equipment</a></li>
+        <li><a href="../Membership/membership.html">Membership</a></li>
+        <li><a href="../Reservation/reservation.html">Reservation</a></li>
+        <li><a href="../Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+        <li><a href="../Classes and Events/classes.html">Classes and Events</a></li>
+    </ul>
+    </div>
+
+    <span onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+<script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+    
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+   <!-------classes and events------> 
+
+   <section class="classes and events">
+        <div class="title-1">
+        <h1>Classes and Events</h1>
+        </div>
+        <div class="title-2">
+        <p>Explore a world of creativity at our maker space, where innovation knows no bounds! With our diverse range of classes including 3D printing, metal sculpting, and arts and crafts, there's something for every maker. We also have upcoming classes in wood sculpting, laser cutting, and web design! Enhance learning opportunities with our variety of packages and events. Join us on a journey of discovery and hands-on learning, and unleash your potential today!</p>
+        </div>
+        <div class="image-container-1">
+            <div class="classes-1">
+                <img src="3D-printing.jpg">
+                <div class="layer-1">
+                    <h3>3D PRINTING</h3>
+                    <p>Explore the world of 3D printing in our class designed for ages 10 and up! Join us for an exciting journey. Learn the basics of 3D modeling, discover how to operate 3D printers, and unleash your creativity as you bring your designs to life. Whether you're a beginner or an experienced maker, this class offers hands-on experience to help you master the art of 3D printing. Join today!</p>
+                    <p>Age Requirements: 10+</p>
+                    <p>When: Tuesdays and Thursdays</p>
+                    <p>Time: 4:00 PM - 6:00 PM</p>
+                    <p>Where: Rm. 5</p>
+                </div>
+            </div>
+            <div class="classes-2">
+                <img src="Metal Welding.jpg">
+                <div class="layer-2">
+                    <h3>METAL WELDING</h3>
+                    <p>Welcome to our metal welding class! 
+                    Join us every week for an immersive exploration of metalworks. 
+                    Learn fundamental techniques such as welding, forging, and metal casting. 
+                    Our expert instructors will provide hands-on guidance, ensuring a safe and rewarding experience for all skill levels. 
+                    Don't miss this chance to ignite your passion! Join today!</p>
+                    <p>Age Requirements: 16+</p>
+                    <p>When: Mondays and Thursdays</p>
+                    <p>Time: 6:00 PM - 8:00 PM</p>
+                    <p>Where: Rm. 4</p>
+                </div>
+            </div>
+            <div class="classes-3">
+                <img src="Arts and Crafts.jpg">
+                <div class="layer-3">
+                    <h3>ARTS AND CRAFTS</h3>
+                    <p>Join us for an exciting Arts and Crafts class suitable for all ages! Whether you're a child, teen, adult, or senior, you're welcome to unleash your creativity in this inclusive environment. Our classes are held every Saturday, offering a variety of hands-on projects and activities to explore different mediums such as painting, drawing, collage, and more. Come with us and let your imagination soar! Join today!</p>
+                    <p>Age Requirements: All Ages</p>
+                    <p>When: Saturdays</p>
+                    <p>Time: 10:00 AM - 12:00 PM</p>
+                    <p>Where: Rm. 2</p>
+                </div>
+            </div>
+            <div class="classes-4">
+                <img src="Wood Sculpting.jpg">
+                <div class="layer-4">
+                    <h3>WOOD SCULPTING</h3>
+                    <p>Get inspired by our wood sculpting class suitable for ages 12 and above! Immerse yourself in the world of woodworking as you learn essential carving techniques and unleash your creativity. Whether you're a beginner or enthusiast, our experienced instructors will guide you through the process, from selecting the perfect wood to refining your carving skills. </p>
+                    <p>Age Requirements: 12+</p>
+                    <p>When: Wednesdays and Fridays</p>
+                    <p>Time: 5:00 PM - 7:00 PM</p>
+                    <p>Where: Rm. 3</p>
+                </div>
+            </div>
+            <div class="classes-4">
+                <img src="cnc.jpg">
+                <div class="layer-4">
+                    <h3>CNC Machines</h3>
+                    <p>Calling all CNC fans. Anyone 16+ can join our CNC machines class. Absorb yourself in the programming side and program the cuts you want the machine to make! Get ready to use a range of machines from grinders and lathes to mills and CNC routers.</p>
+                    <p>Age Requirements: 16+</p>
+                    <p>When: Tuesdays and Fridays</p>
+                    <p>Time: 6:00 PM - 8:00 PM</p>
+                    <p>Where: Rm. 1</p>
+                </div>
+            </div>
+            <div class="classes-5">
+                <img src="Laser Cutting.jpg">
+                <div class="layer-5">
+                    <h3>LASER CUTTING</h3>
+                    <p>Get ready for an exciting Laser Cutting class, suitable for ages 16 and above! Learn how to unleash the power of laser technology to cut and engrave various materials, from wood and acrylic to leather and cardboard. Our experienced instructors will guide you through the process, from designing your creations to operating the laser cutter safely and efficiently.</p>
+                    <br>
+                    <p>Age Requirements: 16+</p>
+                    <p>When: Saturdays</p>
+                    <p>Time: 4:00 PM - 6:00 PM</p>
+                    <p>Where: Rm. 6</p>
+                </div>
+            </div>
+        </div>
+        <div class="title-3">
+        <h1>Upcoming Classes</h1>
+        </div>
+            <div class="image-container-2">
+            <div class="classes-6">
+                <img src="Web Design.jpg">
+                <div class="layer-6">
+                    <h3>WEB DESIGN</h3>
+                    <p>Step into the world of web design with our upcoming web design class! Watch as coding meets creativity for an immersive exploration into the magic of web development. Learn essential HTML, CSS, and JavaScript skills as you unleash your creativity and bring your visions to life online. This class will officially take into effect on May 2nd, 2024. </p>
+                    <br>
+                    <p>Age Requirements: 12+</p>
+                    <p>When: Tuesdays and Thursdays</p>
+                    <p>Time: 6:00 PM - 8:00 PM</p>
+                    <p>Where: Rm. 7</p>
+                 </div>
+            </div>
+            <div class="title-4">
+            <h1>Events</h1>
+            </div>
+            <div class="title-5">
+            <p> Step into a world of creativity and innovation at our maker space, where we offer a variety of exciting events! Whether you're celebrating a birthday, looking for summer camp fun, or diving into STEM exploration, we have something for you. Join us for unforgettable experiences, hands-on activities, and endless opportunities to unleash your creativity!</p>
+            </div>
+            <ul id="events">
+                <li>
+                    <label for ="events-1">Birthday Bash Package <span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="events-1" checked>
+                    <div class="content">
+                        <p>Celebrate your special day in a unique and creative way with our Birthday Bash Package! Perfect for ages 8 and above, this package offers an unforgettable experience filled with hands-on activities and fun projects for the birthday guest and their friends. Here's what's included:</p>
+                        <p1>Duration:</p1> 2 hours of exclusive access to our facilities.</p>
+                        <p1>Activities:</p1>
+                        <p>    </p>
+                        <p1> 1. Creative Projects:</p1> Choose a fun and engaging project for the birthday group to work on together, such as 3D printing keychains, wooden toy making, or jewelry crafting. Our experienced instructors will guide the group through the project from start to finish.</p>
+                        <p1> 2. Interactive Demonstration:</p1> Enjoy live demonstrations of various maker tools and equipment, including 3D printers, laser cutters, woodworking tools, and more. Guests will have the opportunity to learn about the technology and even try their hand at operating some of the equipment under supervision.</p>
+                        <p1> 3. Craft Station:</p1> Let the creativity flow at our craft station, where kids can decorate and personalize their own party favors or create mini masterpieces to take home.</p>
+                        <p1>Additional Add-Ons:</p1>
+                        <p>    </p>
+                        <p1> 1. Themed Decorations:</p1> Enhance the environment with customizable decorations based on your preferred theme, whether it's space exploration, superheroes, or princesses. </p>
+                        <p1>Cost:</p1> $50</p>   
+                        <p1> 2. Refreshments:</p1> Keep the energy up with a selection of snacks and beverages, including kid-friendly options and customizable birthday cake or cupcakes. However, we do suggest bringing your own refreshments.</p>
+                        <p1>Cost:</p1> $75</p>  
+                        <p1> 3. Goodie Bags:</p1> Send guests home with a personalized goodie bag filled with our makerspace-themed treats and small DIY kits to continue the fun at home.</p>
+                        <p1>Cost:</p1> $5 per bag</p>
+                        <p1>Package Pricing:</p1> The base package price is $300. Additional add-ons are available at the indicated costs. Additional fees will be applied to parties over 15 (excluding the birthday guest). Contact us for pricing and availability, as well as any additional customization options you may desire.</p>
+                        <p>Make your birthday celebration one to remember with our Birthday Bash Package! Contact us today to book your party and let the creativity begin!</p>
+                    </div>
+                </li>
+                <li>
+                    <label for ="events-2">Summer Camp Package <span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="events-2">
+                    <div class="content">
+                        <p>Ignite your child's curiosity and creativity with our Summer Camp Package! Designed for inventors, artists, and makers aged 10-15, this package offers an immersive and educational experience filled with exciting projects and hands-on activities. Here's what's included:</p>
+                        <p1>Duration:</p1> Weekly sessions beginning June 17th, 2024</p>
+                        <p1>Timings:</p1> Monday through Friday, from 9:00 AM - 3:00 PM</p>
+                        <p1>Weekly Schedule:</p1>
+                        <p>    </p>
+                        <p1>Week 1:</p1> Dive into the world of robotics and coding as our campers learn to build and program their own miniature robots using technology.</p>
+                        <p1>Week 2:</p1> Explore the fundamental properties of digital design with various softwares, then bring your designs to life using 3D printing and laser cutting.</p>
+                        <p1>Week 3:</p1> Get hands-on with woodworking tools and techniques as our campers learn to design and build their own wooden creations.</p>
+                        <p1>Week 4:</p1> Discover the basics of electronics and circuits as our campers experiment with breadboards, LEDs, sensors, and more to create interactive projects like light-up wearables and musical instruments.</p>
+                        <p>    </p>
+                        <p1>Activities:</p1> 
+                        <p>    </p>
+                        <p1> 1. Daily Workshops:</p1> Each day features a mix of guided workshops and open-ended exploration time, allowing campers to dive deep into their interests and work on individual or group projects.</p> 
+                        <p1> 2. Showcase Day:</p1> At the end of each week, our campers will have the opportunity to showcase their creations and accomplishments to family and friends during an exhibition.</p>
+                        <p1>Additional Add-Ons:</p1>
+                        <p>    </p>
+                        <p1>Lunch Options:</p1> Choose from a selection of healthy and delicious lunch options provided by local our catering partners.</p>
+                        <p1>Cost:</p1> $50 per week</p> 
+                        <p1>Take-Home Kits:</p1> Keep the creativity going beyond the camp week with optional take-home kits containing materials and instructions for additional maker projects.</p>
+                        <p1>Cost:</p1> $20 per kit</p>
+                        <p1>Package Pricing:</p1> The base package price is $350 per week. Additional add-ons are available at the indicated costs. Contact us for pricing and availability, as well as any additional customization options you may desire.</p>
+                        <p>Inspire your child's imagination and innovation with our Summer Camp Package! Enroll today and embark on a summer of discovery and creativity!</p>
+                    </div>
+                </li>
+                <li>
+                    <label for ="events-3">STEM Day Package <span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="events-3" >
+                    <div class="content">
+                        <p>Embark on a thrilling journey of discovery and innovation with our STEM Day at Maker Space Package! Designed for students aged 12-14, this package offers a full day of hands-on STEM activities and immersive learning experiences. Here's what's included:</p>
+                        <p1>Duration:</p1> Friday, November 8th, from 9:00 AM - 4:00 PM</p>
+                        <p>    </p>
+                        <p1>Activities:</p1> 
+                        <p>    </p>
+                        <p1> 1. Interactive Workshops:</p1> Our children will engage in a series of interactive workshops led by our experienced STEM educators and industry professionals. We will explore topics such as robotics, coding, engineering design, and more through engaging hands-on activities and experiments.</p> 
+                        <p1> 2. STEM-Themed Challenges:</p1> Put your child's problem-solving skills to the test with our variety of STEM challenges. They will work collaboratively in teams to design and build solutions to real-world problems that will be given the day of.</p>
+                        <p1> 3. Career Exploration:</p1> Allow your child to gain insight into potential STEM career paths through discussions with our guest speakers who are industry professionals. A hands-on demonstrations of STEM tools and equipment used in various fields wil also be available for viewing.
+                        <p>    </p>
+                        <p1>Additional Add-Ons:</p1>
+                        <p>    </p>
+                        <p1>Lunch Options:</p1> Choose from a selection of nutritious and energizing lunch options to keep participants fueled throughout the day.</p>
+                        <p1>Cost:</p1> $15 per participant</p> 
+                        <p1>Take-Home Kits:</p1> Extend the learning experience beyond STEM Day with our optional take-home kits containing materials and instructions for projects that participants can continue exploring at home. </p>
+                        <p1>Cost:</p1> $10 per kit</p>
+                        <p1>Package Pricing:</p1> The base package price is $150 per participant. Additional add-ons are available at the indicated costs. Contact us for pricing and availability, as well as any additional customization options you may desire.</p>
+                        <p>Inspire the next generation of innovators and problem-solvers with our STEM Day Package! Contact us today to reserve your spot and embark on an unforgettable day of STEM exploration!</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+     
+   </section>
+    <div w3-include-html="../Footer/footer.html"></div> 
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
