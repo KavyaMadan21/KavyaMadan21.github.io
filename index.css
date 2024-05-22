@@ -517,7 +517,7 @@ input[type=text]:focus {
   left: 0;
   width: 100%;
   z-index: 999px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .fullwidth {
@@ -577,10 +577,10 @@ input[type=text]:focus {
 /* Linear-gradient for Services*/
   .lineargradservicesleft {
             left: 0;
-            width: 35%;
+            width: 18%;
             margin-top: 2%;
-            margin-left:10%;
-            margin-right: 5%;
+            margin-left:4%;
+            margin-right: 3%;
             padding-left: 15px;
             min-height: 25vh;
             float: left;
@@ -590,12 +590,27 @@ input[type=text]:focus {
             border-radius: 25px;
           }
     
+          .lineargradservicesleft1 {
+            left: 0;
+            width: 18%;
+            margin-top: 2%;
+            margin-left:4%;
+            margin-right: 3%;
+            padding-left: 15px;
+            min-height: 25vh;
+            float: left;
+            min-height: 180px;
+              /* linear-gradient syntax */
+            background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D);
+            border-radius: 25px;
+          }
+
     .lineargradservicesright {
       left: 0;
-      width: 35%;
+      width: 18%;
       margin-top: 2%;
-      margin-left:5%;
-      margin-right: 10%;
+      margin-left:4%;
+      margin-right: 3%;
       padding-left: 15px;
       float: right;
       min-height: 25vh;
@@ -604,6 +619,34 @@ input[type=text]:focus {
         background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D);
         border-radius: 25px;
           }   
+
+    .lineargradservicesright1 {
+      left: 0;
+      width: 18%;
+      margin-top: 2%;
+      margin-left:4%;
+      margin-right: 3%;
+      padding-left: 15px;
+      float: right;
+      min-height: 25vh;
+
+        /* linear-gradient syntax */
+        background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D);
+        border-radius: 25px;
+          } 
+
+    .text-shape {
+/*       height: 250px;
+      width: 60px; */
+      float: left;
+      shape-outside: circle(50%);
+      float: left;;
+    }
+
+    .wraptext {
+      display: flex;
+      margin-bottom: 10px;
+    }
 
 /* The ratings styles below are no longer being used */
 .ratings1 {
