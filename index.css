@@ -35,17 +35,7 @@ body {
     display: block
   }
 
-   .ratings1 {
-    margin-left: 75%;
-    position: absolute;
-    font-size: 14px;
-  } 
 
-  .ratings2 {
-    margin-right: 75%;
-    position: absolute;
-    font-size: 14px;
-  }
 
   #more {
     display: none;
@@ -435,6 +425,7 @@ input[type=text]:focus {
 
 
  .headerFixed {
+  position: sticky;
   background: #3d5a80;
   top: 0;
   left: 0;
@@ -447,7 +438,7 @@ input[type=text]:focus {
   background: #003459 ;
   float: left;
   width: 3%;
-  height: 175px;
+  min-height: 180px;
   vertical-align: middle;
 }
 
@@ -455,21 +446,21 @@ input[type=text]:focus {
   background: #003459 ;
   float: left;
   width: 27%;
-  height: 175px;
+  min-height: 180px;
 }
 
 .middleheaderbox {
   background: #003459  ;
   float: left;
   width: 40%;
-  height: 175px;
+  min-height: 180px;
 }
 
 .rightheaderbox {
   background: #003459 ;
   float: right;
   width: 30%;
-  height: 175px;
+  min-height: 180px;
 }
 
 .title {
@@ -517,4 +508,112 @@ input[type=text]:focus {
   border-radius: 15px;
   float: right;
   margin-right: 8px;
+}
+
+ /*Ratings and image - this is a 3 column layout*/
+
+ .headerbody {
+   top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fullwidth {
+  float: left;
+  width: 100%;
+  height:auto 
+}
+
+.ratingsleft {
+  float: left;
+  width: 34%;
+  margin-right: 1%;
+  min-height: 600px;
+  height:auto 
+}
+
+.ratingsmiddle {
+  float: left;
+  width: 30%;
+  min-height: 600px;
+  height:auto 
+}
+
+.ratingsmiddle img
+{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display:block
+}
+
+.ratingsright {
+  float: right;
+  width: 34%;
+  margin-left: 1%;
+  min-height: 600px;
+  height:auto 
+}
+
+
+/* Linear-gradient for Mission*/
+  .lineargradmission {
+/*         top: 0;  */
+        left: 0;
+        width: 80%;
+        margin-top: 8%;
+        margin-left:10%;
+        margin-right: 10%;
+        padding-left: 15px;
+        min-height: 25vh;
+
+          /* linear-gradient syntax */
+          background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D, #003459);
+          border-radius: 25px;
+      }
+
+/* Linear-gradient for Services*/
+  .lineargradservicesleft {
+            left: 0;
+            width: 35%;
+            margin-top: 2%;
+            margin-left:10%;
+            margin-right: 5%;
+            padding-left: 15px;
+            min-height: 25vh;
+            float: left;
+            min-height: 180px;
+              /* linear-gradient syntax */
+            background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D);
+            border-radius: 25px;
+          }
+    
+    .lineargradservicesright {
+      left: 0;
+      width: 35%;
+      margin-top: 2%;
+      margin-left:5%;
+      margin-right: 10%;
+      padding-left: 15px;
+      float: right;
+      min-height: 25vh;
+
+        /* linear-gradient syntax */
+        background-image: linear-gradient(135deg, white,  #fedc97, #04AA6D);
+        border-radius: 25px;
+          }   
+
+/* The ratings styles below are no longer being used */
+.ratings1 {
+  margin-left: 75%;
+  position: relative;
+  font-size: 14px;
+} 
+
+.ratings2 {
+  margin-right: 75%;
+  position: relative;
+  font-size: 14px;
 }

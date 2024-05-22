@@ -10,171 +10,274 @@
     <script src="index.js"></script>
 </head>
 <body>
-<!--<div w3-include-html="../Header/header.html"></div>-->    
-    <header>
+<!--<div w3-include-html="../Header/header.html"></div>-->   
+<!--********************************* Goes into Header2.html-->
+<header class="headerFixed">
+   <!--Navigation-->
+   <div class = "leftnavbox">
+    <br/>
+    <span onclick="openNav()" style="font-size:50px;cursor:pointer;color:#fedc97;">&#9776;</span>
+  </div>
+
+  <!--Logo-->
+  <div class = "leftheaderbox">
+          <a href="../index.html">
+              <img class="logo" src="innovationlabslogo.png" alt="InNOVAtion Labs Logo">
+          </a>
+  </div>
+
+
+  <!--Company Name and slogan-->
+  <div class = middleheaderbox>
+      <h1 class="title">InNOVAtion Labs</h1>
+      <h1 class="slogan">Innovate, Inspire, Interest</h1>
+  </div>
+
+  <!--Login, sign up etc.-->
+
+  <div class = rightheaderbox >
       <!--Sign Up-->
-        <button class="signup" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+      <br/>
+      <button class="signup" vertical-align="middle" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-  <form class="modal-content animate">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="email" placeholder="Enter Email" name="email" required>
-
-      <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="../Equipment/terms.html" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-<script>
-var modal = document.getElementById('id01');
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-<!--Login-->
-        <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width: auto;">Login</button>
-
-        <div id="id02" class="modal">
-          <span onclick="document.getElementById('id02').style.display='none'"
-        class="close" title="Close Modal">&times;</span>
-        
+      <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
           <form class="modal-content animate">
-            <div class="imgcontainer">
-              <img src="Header/User_Avatar.png" alt="Avatar" class="avatar">
-            </div>
-        
-            <div class="container">
-              <label for="username"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-        
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-        
-              
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-              <button class="loginbtn" type="submit">Login</button>
-            </div>
-        
-            <div class="container" style="background-color:#f1f1f1">
-              <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
+              <div class="container">
+                  <h1>Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+                  <label for="email"><b>Email</b></label>
+                  <input type="email" placeholder="Enter Email" name="email" required>
+
+                  <label for="username"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                  <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+
+                  <p>By creating an account you agree to our <a href="../Equipment/terms.html" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                  <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+              </div>
           </form>
-        </div>
-
-        <script>
-          var modal = document.getElementById('id02');
-          
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-          </script>
-
-        <a href="index.html">
-            <img class="logo" src="innovationlabslogo.png" alt="InNOVAtion Labs Logo">
-        </a>
-        <img src="pexels-yankrukov-8612990.png" alt="header_image1" style="position: absolute; left: 20.5%;">
-        <img src="pexels-vanessa-loring-7869798.png" alt="header_image2" style="position: absolute; left: 40%; right: 40%;">
-        <img src="pexels-jakubzerdzicki-19871866.png" alt="header_image3" style="position: absolute; right: 20.5%;">
-        <br>
-        <br>
-        <br>
-        <br><br>
-        <a href="/Classes and Events/classes.html"><img src="pexels-vanessa-loring-7869233.jpg" alt="header_image5" style="float: right"></a>
-        <h1 class="title">InNOVAtion Labs</h1>
-        <h2 class="slogan">Innovate, Inspire, Interest</h2>
-        <h2 class="slogan">4400 Stringfellow Rd, Chantilly, VA 20151</h2>
-    </header>
-    <br>
-    <br>
-      <div id="mySidenav" class="sidenav">
-      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-      <ul id="myMenu">
-          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="Equipment/equipment.html">Equipment</a></li>
-          <li><a href="Membership/membership.html">Membership</a></li>
-          <li><a href="Reservation/reservation.html">Reservation</a></li>
-          <li><a href="Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
-          <li><a href="Classes and Events/classes.html">Classes and Events</a></li>
-      </ul>
       </div>
-
-      <span onclick="openNav()" style="font-size:50px;cursor:pointer">&#9776;</span>
 
       <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
+          var modal = document.getElementById('id01');
+
+          window.onclick = function(event) {
+          if (event.target == modal) {
+          modal.style.display = "none";
+          }
+          }
+      </script>
+      <!--Login-->
+      <button class="login" onclick="document.getElementById('id02').style.display='block'" style="width: auto;">Login</button>
+
+      <div id="id02" class="modal">
+          <span onclick="document.getElementById('id02').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+
+          <form class="modal-content animate">
+              <div class="imgcontainer">
+                  <img src="../Header/User_Avatar.png" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                  <label for="username"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+                  <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button class="loginbtn" type="submit">Login</button>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+          </form>
+      </div>
+
+      <script>
+          var modal = document.getElementById('id02');
+
+          window.onclick = function(event) {
+          if (event.target == modal) {
+          modal.style.display = "none";
+          }
+          }
+      </script>
+
+      <br/><br/><br/>
+
+      <p class="address">4400 Stringfellow Rd &nbsp;&nbsp;&nbsp;<br/>
+      Chantilly, VA 20151 &nbsp;&nbsp;&nbsp;<br/>
+      Tel No: 1-800-GET-NOVA &nbsp;&nbsp;&nbsp;<br/>
+      </p>
+  </div>
+
+<!-- Code for the side NAV -->
+
+<div id="mySidenav" class="sidenav">
+  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+  <ul id="myMenu">
+      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="Equipment/equipment.html">Equipment</a></li>
+      <li><a href="Membership/membership.html">Membership</a></li>
+      <li><a href="Reservation/reservation.html">Reservation</a></li>
+      <li><a href="Calendar and Hours/time.html">Calendar of Events and Hours</a></li>
+      <li><a href="Classes and Events/classes.html">Classes and Events</a></li>
+  </ul>
+  </div>
 
   <script>
-      function myFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("mySearch");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myMenu");
-        li = ul.getElementsByTagName("li");
-      
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+  
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
       }
-      </script>
+    }
+  }
+  </script>
+
+
+  </header>
+
+  <!--********************************* Above code Goes into Header.html-->
+
+
+    <br>
+    <br>
+
+ 
+
+<!-- <header class="headermission">
+    <p>&nbsp;</p> -->
+
+
+   <!--Spacer-->
+<!--    <div class = "leftmission">
+    <br/>
+    <span >&nbsp;</span>
+  </div> -->
+
+  <!--Main text of mission-->
+<!--   <div class = "mainmission">
     <div class="imagecontainer">
       <img src="innovationwordcloud.jpg" alt="Innovoation Word Cloud" style="width: 50%;">
       <div class="centered">
         <div>
           <a href="Membership/membership.html"><img src="Header/jointoday2.png" alt="jointoday_2" class="jointoday2"></a>
           <h2>Our Mission</h2>
-          <p>We at InNOVAtion Labs strive to teach kids to innovate and increase their creativeness.
             <br>With our services, you can ensure that your kids will become skilled engineers, artists, innovators, and more.
             Kids will learn the importance of collaboration and communication in any project.
           </p>
         </div>
       </div>
     </div>
-    
-    <div class="ratings2">
+  </div> -->
+
+
+  <!--Mission Image-->
+<!--   <div class = missionimage>
+    <br>
+    <br><br>
+    <a href="/Classes and Events/classes.html"><img src="pexels-vanessa-loring-7869233.jpg" alt="header_image5" style="float: right"></a>
+
+  </div>
+</header> -->
+
+<br>
+<br><br>
+
+<!-- Mission section-->
+
+<div class="lineargradmission">
+
+  <h2 style="text-align: left;" class="videotext">Our Mission</h2>
+  <div>
+    <a href="Membership/membership.html"><img src="Header/jointoday2.png" alt="jointoday_2" class="jointoday2"></a>
+      <br>With our services, you can ensure that your kids will become skilled engineers, artists, innovators, and more.
+      Kids will learn the importance of collaboration and communication in any project.
+      Empowering Tomorrow's Leaders: Our mission is to ignite a passion for learning and inspire the next generation of innovators. 
+      Through interactive and engaging programs, we cultivate curiosity, critical thinking, and creativity in youth. 
+      We are committed to providing accessible and inclusive educational opportunities that equip young minds with the skills and knowledge they need to thrive in an ever-evolving world.
+
+    </p>
+  </div>
+</div>
+
+<!--         <p>
+        <img src="pexels-yankrukov-8612990.png" alt="header_image1" style="position: relative; left: 20.5%;">
+        <img src="pexels-vanessa-loring-7869798.png" alt="header_image2" style="position: relative; left: 40%; right: 40%;">
+        <img src="pexels-jakubzerdzicki-19871866.png" alt="header_image3" style="position: relative; right: 20.5%;">
+      </p>
+        <br>
+        <br> -->
+  
+<div class="lineargradservicesheader">
+  <h2 style="text-align: middle">Our Services</h2><hr style="color: black;"/>
+  <div class="lineargradservicesleft">
+    <img src="pexels-jakubzerdzicki-19871866.png" alt="header_image3"><span>Reserve Equipment</span>
+  </div>
+
+  <div class="lineargradservicesright">
+    <img src="pexels-vanessa-loring-7869798.png" alt="header_image2"><span>Reserve an Activity Room</span>
+  </div>
+</div>
+
+<div class="lineargradservicesheader">
+  <div class="lineargradservicesleft">
+    <img src="pexels-yankrukov-8612990.png" alt="header_image1" > <span>Book a Class</span>
+  </div>
+
+  <div class="lineargradservicesright">
+    <img src="pexels-vanessa-loring-7869798.png" alt="header_image2"><span>Other Packages</span>
+  </div>
+
+</div>
+
+    <!-- Review section -->
+    <header class="headerbody">
+    <div class = "ratingsleft">
+    <div >
       <h2>Top Reviews</h2>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
@@ -201,8 +304,9 @@ window.onclick = function(event) {
 
     
     <button onclick="myFunction()" id="myBtn">Read more</button>
+    
     <script>
-        function myFunction() {
+    function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -219,8 +323,16 @@ window.onclick = function(event) {
 }
     </script>
     </div>
+  </div>
+
+  <div class = "ratingsmiddle">
+    <br/> <br/> <br/> <br/> <br/> <br/>
+    <img src="rahul-jain-JOYtT8_Y7c8-unsplash.jpg" alt="Homepage Image"> 
+  </div>
+
+  <div class = "ratingsright">
     <span id="more">
-    <div class="ratings1">
+    <div>
     <h2>Top Reviews</h2>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
@@ -244,38 +356,20 @@ window.onclick = function(event) {
     <p>"I can't say enough good things about Innovation Labs. My child loves going there and has made so many cool projects. The makerspace is well-organized and clean, and the staff is always available to help. It's a great place for kids to learn and explore there interests."<br>- Mayank P</p>
     </div>
     </span>
+  </div>
+</header>
+    <br>
+    <br>
+    <br>
+    <br>
 
-   <!-- <div class="ratings1">
-    <h2>Top Reviews</h2>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <p>"Innovation Labs is an amazing makerspace for kids! My child has learned so much about creativity, problem-solving, and technology in a fun and engaging environment. The staff is knowledgeable and friendly, and the equipment and resources are top-notch. Highly recommend!"<br>- Rupa S</p>
-    
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <p>"Innovations Labs is a game changer for kids who love to tinker and create. My child has learned so much about woodworking, CNC machines, and 3D printing, and has made some amazing projects. The makerspace is well-stocked with equipment and materials, and the staff is always available to help. It's a great invenstment in your child's future!"<br>- Kyle M</p>
-    
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <p>"I can't say enough good things about Innovation Labs. My child loves going there and has made so many cool projects. The makerspace is well-organized and clean, and the staff is always available to help. It's a great place for kids to learn and explore there interests."<br>- Mayank P</p>
-    </div> -->
     <br>
-    <br>
-    <br>
-    <br>
-    <img class="homepageimg" src="rahul-jain-JOYtT8_Y7c8-unsplash.jpg" alt="Homepage Image"> 
-    <br>
+<header class="headerbody">
+  <div class="fullwidth">
+  <h2 style="text-align: center;" class="videotext">Take a Peek At Some of The Fun Moments At Our Space!</h2>
+  </div>
     <div>
-      <h2 style="text-align: center;" class="videotext">Take a Peek At Some of The Fun Moments At Our Space!</h2>
+      
       <video width="320" height="240" class="video1" id="vid1"><source src="schoolkidwithcreation.mp4" type="video/mp4"></video>
       <script>
             let vid1 = document.querySelector("#vid1") 
@@ -316,6 +410,9 @@ window.onclick = function(event) {
         }) 
   </script> 
     </div>
+
+  </header>
+
         <footer class="footer">
         <br>
         <nav am-layout="horizontal">
